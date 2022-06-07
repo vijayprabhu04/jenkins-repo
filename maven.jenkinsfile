@@ -24,7 +24,7 @@ pipeline {
 						if (env_build == 'true') {
 						sh '''
 						echo "Build java artifact"
-						cd ${WORKSPACE}/maven/ && mvn package
+						cd ${WORKSPACE}/ && mvn package
 						'''
 						}
 					}
@@ -37,7 +37,7 @@ pipeline {
 						if (env_clean == 'true') {
 						sh '''
 						echo "Build java artifact"
-						cd ${WORKSPACE}/maven && mvn clean
+						cd ${WORKSPACE} && mvn clean
 						'''
 						}
 					}
