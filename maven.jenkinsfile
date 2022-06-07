@@ -24,7 +24,7 @@ pipeline {
 						if (env_build == 'true') {
 						sh '''
 						echo "Build java artifact"
-						cd ${WORKSPACE}/ && mvn package
+						cd ${WORKSPACE} && mvn package
 						'''
 						}
 					}
